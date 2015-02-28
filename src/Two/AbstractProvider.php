@@ -125,6 +125,7 @@ abstract class AbstractProvider implements ProviderContract {
 			'client_id' => $this->clientId, 'redirect_uri' => $this->redirectUrl,
 			'scope' => $this->formatScopes($this->scopes, $this->scopeSeparator), 'state' => $state,
 			'response_type' => 'code',
+			'auth_type' => 'rerequest',
 		], '', '&', $this->encodingType );
 	}
 
